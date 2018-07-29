@@ -23,6 +23,7 @@ namespace ChatServer
         public MainWindow()
         {
             InitializeComponent();
+            Init.Initialize();
         }
     }
 }
