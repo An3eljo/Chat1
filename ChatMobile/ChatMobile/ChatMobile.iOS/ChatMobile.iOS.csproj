@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E94EC45A-9394-4A48-A774-6CA0310C0FDB}</ProjectGuid>
+    <ProjectGuid>{A987CB6B-080D-4EF3-ADF3-5BE65DFBEDF6}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -147,11 +147,13 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="MQTTnet.Extensions.ManagedClient">
-      <Version>2.8.1</Version>
-    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\ChatMobile\ChatMobile.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\ChatMobile\ChatMobile.csproj">
+      <Project>{03E0AF71-8DBE-412C-A559-37E2CA7CBC08}</Project>
+      <Name>ChatMobile</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
