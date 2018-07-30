@@ -9,9 +9,9 @@ using MQTTnet.Server;
 
 namespace ChatService
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             var mqttServer = new MqttFactory().CreateMqttServer();
             var options = new MqttServerOptionsBuilder().WithDefaultEndpointPort(1884).Build();
@@ -55,6 +55,7 @@ namespace ChatService
                 }
                 
             }).Start();
+            Init.Initialize();
         }
     }
 }
