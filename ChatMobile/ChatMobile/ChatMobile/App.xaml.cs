@@ -16,17 +16,20 @@ namespace ChatMobile
 
 		protected override void OnStart ()
 		{
+            //todo: connect
 			// Handle when your app starts
 		}
 
 		protected override void OnSleep ()
 		{
-			// Handle when your app sleeps
-		}
+		    //todo: disconnect
+            // Handle when your app sleeps
+        }
 
-		protected override void OnResume ()
+        protected override void OnResume ()
 		{
-			// Handle when your app resumes
-		}
-	}
+		    //todo: connect
+            // Handle when your app resumes
+        }
+    }
 }
